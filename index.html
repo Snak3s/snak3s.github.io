@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.6, minimum-scale=0.6, maximum-scale=0.6" />
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/auto-render.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/tomorrow-night-bright.min.css">
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
+
+	<link rel="stylesheet" href="resources/main.css">
+	<link rel="stylesheet" href="resources/font.css">
+	<script type="module" src="resources/main.js"></script>
+</head>
+<body>
+	<div class="ui container">
+		<div id="navbar" class="ui borderless top fixed inverted menu">
+			<div id="navbar-items" class="ui container">
+				<a id="nav-" href="#" class="ui header item"></a>
+				<a id="nav-tags" href="#tags" class="ui item">Tags</a>
+			</div>
+		</div>
+		<div id="main" class="ui main container">
+			<div id="index" class="ui container">
+				<div id="index-header">
+					<div id="index-title" class="ui huge header"></div>
+					<div id="index-hitokoto">
+						<div class="ui text container">
+							<div id="index-hitokoto-content"></div>
+						</div>
+						<div class="ui text container">
+							<div id="index-hitokoto-from"></div>
+						</div>
+					</div>
+				</div>
+				<div id="index-container"  class="ui grid">
+					<div class="ui twelve wide column">
+						<div id="index-pages"></div>
+					</div>
+					<div class="ui four wide column">
+						<div id="index-menu" class="ui sticky">
+							<div class="ui fluid card">
+								<div class="image">
+									<img src="images/profile.png" />
+								</div>
+								<div id="profile-header" class="ui center aligned small header content">
+									Snakes
+								</div>
+								<div class="extra content">
+									<div class="ui list">
+										<a href="https://github.com/Snak3s">
+											<div class="item">
+												<i class="github icon"></i>
+												Github
+											</div>
+										</a>
+										<a href="https://codeforces.com/profile/Serval">
+											<div class="item">
+												<i class="code icon"></i>
+												Codeforces
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="ui segments">
+								<div class="ui top attached header segment">
+									Tags
+								</div>
+								<div id="index-tags" class="ui bottom attached segment">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tagspage" class="ui container">
+				<div id="tagspage-header">
+					<div id="tagspage-title" class="ui huge header"></div>
+				</div>
+				<div id="tagspage-container"  class="ui grid">
+					<div class="ui twelve wide column">
+						<div id="tagspage-pages"></div>
+					</div>
+					<div class="ui four wide column">
+						<div id="tagspage-menu" class="ui sticky">
+							<div class="ui fluid card">
+								<div class="image">
+									<img src="images/profile.png" />
+								</div>
+								<div id="profile-header" class="ui center aligned small header content">
+									Snakes
+								</div>
+								<div class="extra content">
+									<div class="ui list">
+										<a href="https://github.com/Snak3s">
+											<div class="item">
+												<i class="github icon"></i>
+												Github
+											</div>
+										</a>
+										<a href="https://codeforces.com/profile/Serval">
+											<div class="item">
+												<i class="code icon"></i>
+												Codeforces
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="ui segments">
+								<div class="ui top attached header segment">
+									Tags
+								</div>
+								<div id="tagspage-tags" class="ui bottom attached segment">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="page" class="ui container">
+				<div id="page-header">
+					<div id="page-title" class="ui large header"></div>
+					<div id="page-labels"></div>
+				</div>
+				<div id="page-container" class="ui grid">
+					<div class="ui twelve wide column">
+						<div id="page-content" class="ui segment"></div>
+					</div>
+					<div class="ui four wide column">
+						<div id="page-menu" class="ui sticky">
+							<div id="page-menu-title" class="ui header"></div>
+							<div id="page-menu-percentage"></div>
+							<div id="page-menu-items" class="ui secondary pink vertical fluid pointing menu"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="error" class="ui error message">
+				<div class="ui container">
+					<div id="errortitle" class="ui header"></div>
+					<ul id="errormsg" class="list"></ul>
+					<div class="ui divider"></div>
+					<button class="ui basic labeled icon button" onclick="history.go(-1);">
+						<i class="left arrow icon"></i>
+						Back
+					</button>
+					<button class="ui basic labeled icon button" onclick="history.go(0);">
+						<i class="redo icon"></i>
+						Refresh
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="ui center aligned container">
+				<p>Made with <i onclick="if (this.className=='heart icon') this.style['color']='#E81224'; this.className='heart icon';" class="heart outline icon"></i>by Snakes</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

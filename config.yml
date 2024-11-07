@@ -1,0 +1,7 @@
+pages:
+  - BCPC 2020 预赛题解:
+    - path: bcpc-2020-preliminary
+    - src: pages/bcpc-2020-preliminary.md
+    - author: Snakes
+    - date: 2020/12/02
+    - tags: [Dec 2020, BCPC 2020, 题解]
