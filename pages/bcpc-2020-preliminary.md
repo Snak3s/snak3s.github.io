@@ -8,8 +8,6 @@
 
 [CF 上的比赛镜像](http://codeforces.com/gym/306057)
 
----
-
 #### A 三角形切半
 
 签到
