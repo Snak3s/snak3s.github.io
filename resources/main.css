@@ -86,19 +86,10 @@ img {
   font-size: 3.2em;
 }
 
-#index-hitokoto-content {
+#index-motto-content {
   text-align: center;
   color: rgba(255, 255, 255, .8);
   font-size: 1.2em;
-}
-
-#index-hitokoto-from {
-  text-align: right;
-  color: rgba(255, 255, 255, .8);
-  font-size: 1.2em;
-}
-#index-hitokoto-from::before {
-  content: "\2014\2014";
 }
 
 #index-container {
@@ -233,7 +224,7 @@ img {
 }
 #page-menu-percentage {
   color: rgba(255, 255, 255, .6);
-  background-color: rgb(224, 57, 151, .8);
+  background-color: rgb(33, 133, 208, .8);
   height: 12px;
   font-size: 12px;
   line-height: 12px;

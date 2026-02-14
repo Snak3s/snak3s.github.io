@@ -1,7 +1,19 @@
 pages:
+  - 异或最小值的性质:
+    - path: minimum-under-linear-basis
+    - src: pages/minimum-under-linear-basis.md
+    - author: Snakes
+    - date: 2026/01/20
+    - tags: [Jan 2026, Linear Basis, Tutorial]
+  - 🐍题集锦:
+    - path: problem-settings
+    - src: pages/problem-settings.md
+    - author: Snakes
+    - date: 2025/12/31
+    - tags: [Dec 2025, Codeforces]
   - BCPC 2020 预赛题解:
     - path: bcpc-2020-preliminary
     - src: pages/bcpc-2020-preliminary.md
     - author: Snakes
     - date: 2020/12/02
-    - tags: [Dec 2020, BCPC 2020, 题解]
+    - tags: [Dec 2020, BCPC 2020, Tutorial]

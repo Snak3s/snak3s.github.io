@@ -360,16 +360,9 @@ function getIcon(iconName) {
 }
 
 
-function getHitokoto() {
-	$("#index-hitokoto").css("opacity", 0);
-	$.ajax({
-		url: "https://v1.hitokoto.cn?c=a",
-		success: function(data) {
-			$("#index-hitokoto-content").text(data.hitokoto);
-			$("#index-hitokoto-from").text(data.from);
-			$("#index-hitokoto").css("opacity", 1);
-		}
-	});
+function getMotto() {
+	$("#index-motto-content").text("迷いを舍てて サテライト Ah…");
+	$("#index-motto").css("opacity", 1);
 }
 
 
