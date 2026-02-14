@@ -511,7 +511,7 @@ function getPageSegment(page) {
 
 
 function renderIndex() {
-	getHitokoto();
+	getMotto();
 	$("#index-pages").empty();
 	for (let id in pagelist) {
 		$("#index-pages").append(getPageSegment(pagelist[id]));
