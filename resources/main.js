@@ -737,12 +737,12 @@ function renderPage(page, content) {
 			}
 		}
 		$("#page-menu").css("display", "block");
-		$("#page-content-container").removeClass("sixteen wide");
+		$("#page-content-container").removeClass("twelve sixteen wide");
 		$("#page-content-container").addClass("twelve wide");
 	} else {
 		$("#page-menu-items").css("display", "none");
 		$("#page-menu").css("display", "none");
-		$("#page-content-container").removeClass("twelve wide");
+		$("#page-content-container").removeClass("twelve sixteen wide");
 		$("#page-content-container").addClass("sixteen wide");
 	}
 	$("#page-content").visibility({
