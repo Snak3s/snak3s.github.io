@@ -11,6 +11,12 @@ pages:
     - author: Snakes
     - date: 2025/12/31
     - tags: [Dec 2025, Codeforces]
+  - SHA256 以 114514 开头的字符串:
+    - path: sha256-114514
+    - src: pages/sha256-114514.md
+    - author: Snakes
+    - date: 2024/05/17
+    - tags: [May 2024, SHA256]
   - BCPC 2020 预赛题解:
     - path: bcpc-2020-preliminary
     - src: pages/bcpc-2020-preliminary.md
