@@ -8,7 +8,7 @@ var pages = {
 		path: "",
 	},
 	"tags": {
-		title: "Tags",
+		title: "Category",
 		path: "tags",
 	}
 };
@@ -536,7 +536,7 @@ function renderIndex() {
 function renderTagsPage() {
 	$("#tagspage-pages").empty();
 	if (param == "" || param == undefined || param == null) {
-		$("#tagspage-title").text("Tags");
+		$("#tagspage-title").text("Category");
 		let list = $("<div></div>");
 		list.addClass("ui four stackable cards");
 		for (let id in tags) {
