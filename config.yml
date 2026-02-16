@@ -23,3 +23,9 @@ pages:
     - author: Snakes
     - date: 2020/12/02
     - tags: [Dec 2020, BCPC 2020, Tutorial]
+  - Möbius Inversion and Dirichlet Convolution
+    - path: mobius-inversion-dirichlet-convolution
+    - src: pages/mobius-inversion-dirichlet-convolution.md
+    - author: Snakes
+    - date: 2018/05/20
+    - tags: [May 2018, Möbius Inversion, Dirichlet Convolution]
