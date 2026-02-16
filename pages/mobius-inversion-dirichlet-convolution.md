@@ -32,13 +32,13 @@ $[P]$：若命题$P$成立，则$[P]=1$，否则$[P]=0$
 
 莫比乌斯函数是众多数论函数之一，其定义如下：
 
-$$\mu(n)=\begin{cases}(-1)^{\omega(n)}&,\not\exists p\in\mathbb{P},p^2|n\\\\0&,\exists p\in\mathbb{P},p^2|n\end{cases}$$
+$$\mu(n)=\begin{cases}(-1)^{\omega(n)}&,\not\exists p\in\mathbb{P},p^2|n\\0&,\exists p\in\mathbb{P},p^2|n\end{cases}$$
 
 根据定义式，我们可以发现，莫比乌斯函数是一个积性函数。至于为什么不是一个完全积性函数，反例非常显然。
 
 莫比乌斯函数有以下特殊性质：
 
-$$\sum_{d|n}\mu(d)=\begin{cases}1&,n=1\\\\0&,n>1\end{cases}$$
+$$\sum_{d|n}\mu(d)=\begin{cases}1&,n=1\\0&,n>1\end{cases}$$
 
 或者可以写成：
 
@@ -148,15 +148,15 @@ $$(f*g)(n)=\sum_{d|n}f(d)g\left(\frac nd\right)$$
 
 显然地，狄利克雷卷积具有交换律：
 
-$$(f\*g)(n)=\sum_{d|n}f(d)g\left(\frac nd\right)=\sum_{d|n}g(d)f\left(\frac nd\right)=(g\*f)(n)$$
+$$(f*g)(n)=\sum_{d|n}f(d)g\left(\frac nd\right)=\sum_{d|n}g(d)f\left(\frac nd\right)=(g*f)(n)$$
 
 同时，利用交换枚举顺序，我们可以证明狄利克雷卷积具有结合律：
 
-$$((f\*g)\*h)(n)=\sum_{u|n}h\left(\frac nu\right)\sum_{d|u}f(d)g\left(\frac ud\right)=\sum_{d|n}f(d)\sum_{c|\frac nd}g(c)h\left(\frac n{cd}\right)=(f\*(g\*h))(n)$$
+$$((f*g)*h)(n)=\sum_{u|n}h\left(\frac nu\right)\sum_{d|u}f(d)g\left(\frac ud\right)=\sum_{d|n}f(d)\sum_{c|\frac nd}g(c)h\left(\frac n{cd}\right)=(f*(g*h))(n)$$
 
 对于两个积性函数$f$和$g$，$f*g$依然是积性函数。下式中$a,b$满足$(a,b)=1$：
 
-$$\begin{aligned}(f\*g)(a)(f\*g)(b)&=\left[\sum_{u|a}f(u)g\left(\frac au\right)\right]\left[\sum_{v|b}f(v)g\left(\frac bv\right)\right]\\\\&=\sum_{u|a}\sum_{v|b}f(u)g\left(\frac au\right)f(v)g\left(\frac bv\right)\\\\&=\sum_{u|a}\sum_{v|b}f(uv)g\left(\frac {ab}{uv}\right)\\\\&=\sum_{d|ab}f(d)g\left(\frac {ab}d\right)\\\\&=(f\*g)(ab)\end{aligned}$$
+$$\begin{aligned}(f*g)(a)(f*g)(b)&=\left[\sum_{u|a}f(u)g\left(\frac au\right)\right]\left[\sum_{v|b}f(v)g\left(\frac bv\right)\right]\\&=\sum_{u|a}\sum_{v|b}f(u)g\left(\frac au\right)f(v)g\left(\frac bv\right)\\&=\sum_{u|a}\sum_{v|b}f(uv)g\left(\frac {ab}{uv}\right)\\&=\sum_{d|ab}f(d)g\left(\frac {ab}d\right)\\&=(f*g)(ab)\end{aligned}$$
 
 对于积性函数$f$与数论函数$g$，若$f*g$为积性函数，则$g$也为积性函数。
 
@@ -166,7 +166,7 @@ $$(f+g)(n)=f(n)+g(n)$$
 
 显然满足分配律：
 
-$$((f+g)\*h)(n)=\sum_{d|n}[f(n)+g(n)]h\left(\frac nd\right)=\sum_{d|n}\left[f(n)h\left(\frac nd\right)+g(n)h\left(\frac nd\right)\right]=(f\*h)(n)+(g\*h)(n)$$
+$$((f+g)*h)(n)=\sum_{d|n}[f(n)+g(n)]h\left(\frac nd\right)=\sum_{d|n}\left[f(n)h\left(\frac nd\right)+g(n)h\left(\frac nd\right)\right]=(f*h)(n)+(g*h)(n)$$
 
 若我们在数论函数集合$R$上定义两个二元运算加法与乘法$(+,*)$，分别为点值加法与狄利克雷卷积，显然其满足：
 
@@ -183,7 +183,7 @@ $$\varepsilon(n)=[n=1]$$
 
 对于数论函数$f$，我们有：
 
-$$(f\*\varepsilon)(n)=\sum_{d|n}f(d)\varepsilon\left(\frac nd\right)=f(n)$$
+$$(f*\varepsilon)(n)=\sum_{d|n}f(d)\varepsilon\left(\frac nd\right)=f(n)$$
 
 因此$f*\varepsilon=f$成立，$\varepsilon$为环$R$中乘法幺元，$R$也为幺环。
 
@@ -243,19 +243,19 @@ $$f=\mu*g$$
 
 我们考虑将$\mu*g$中$g$代换，则有：
 
-$$\mu\*g=\mu\*(1\*f)$$
+$$\mu*g=\mu*(1*f)$$
 
 上一节提及，狄利克雷函数具有结合律：
 
-$$\mu\*(1\*f)=(\mu\*1)\*f=\varepsilon\*f$$
+$$\mu*(1*f)=(\mu*1)*f=\varepsilon*f$$
 
 在狄利克雷环中，$\varepsilon$为其乘法幺元，则
 
-$$f=\mu\*g=\varepsilon\*f=f$$
+$$f=\mu*g=\varepsilon*f=f$$
 
 故原式成立。同样地，我们也可以推出其逆命题成立：
 
-$$g=f\*1=(\mu\*g)\*1=(\mu\*1)\*g=\varepsilon\*g=g$$
+$$g=f*1=(\mu*g)*1=(\mu*1)*g=\varepsilon*g=g$$
 
 到此为止，我们已经完整地利用狄利克雷卷积的性质证明了莫比乌斯反演。
 
@@ -275,23 +275,23 @@ $$\lambda*1=1_{Sq}$$
 
 我们先证明对于满足$n\not\in Sq$的正整数$n$，原式成立。考虑构造，由于$n\not\in Sq$，则一定存在$p\in\mathbb{P}$使得$\nu_p(n)$为奇数。对于$n$的任一因数$d$，令$u=\frac d{p^{\nu_p(d)}}$，将其与$p^{\nu_p(n)-\nu_p(d)}u$组成一对，则$\Omega(p^{\nu_p(n)-\nu_p(d)}u)$与$\Omega(d)$的奇偶性不同。因此有下式成立：
 
-$$\begin{aligned}(\lambda*1)(n)&=\sum_{d|n}\lambda(d)\\\\&=\frac 12\sum_{d|n}\left[\lambda(d)+\lambda\left(p^{\nu_p(n)-2\nu_p(d)}d\right)\right]\\\\&=\frac 12\sum_{d|n}\left[(-1)^{\Omega(d)}+(-1)^{\Omega\left(p^{\nu_p(n)-2\nu_p(d)}d\right)}\right]\\\\&=\frac 12\sum_{d|n}(-1+1)\\\\&=\frac 12\sum_{d|n}0\\\\&=0\end{aligned}$$
+$$\begin{aligned}(\lambda*1)(n)&=\sum_{d|n}\lambda(d)\\&=\frac 12\sum_{d|n}\left[\lambda(d)+\lambda\left(p^{\nu_p(n)-2\nu_p(d)}d\right)\right]\\&=\frac 12\sum_{d|n}\left[(-1)^{\Omega(d)}+(-1)^{\Omega\left(p^{\nu_p(n)-2\nu_p(d)}d\right)}\right]\\&=\frac 12\sum_{d|n}(-1+1)\\&=\frac 12\sum_{d|n}0\\&=0\end{aligned}$$
 
 对于除$1$外的$n\in Sq$的情况，我们可以利用狄利克雷卷积的性质。刘维尔函数$\lambda$与常数函数$1$均为积性函数，因此$\lambda*1$也为积性函数。考虑$n$的质因数分解，则有：
 
-$$(\lambda\*1)(n)=\prod_{i=1}^{\omega(n)}(\lambda\*1)\left(p_i^{\nu_{p_i}(n)}\right)$$
+$$(\lambda*1)(n)=\prod_{i=1}^{\omega(n)}(\lambda*1)\left(p_i^{\nu_{p_i}(n)}\right)$$
 
 由于$n\in Sq$，则所有$\nu_{p_i}(n)$均为偶数。显然地，$p_i^{\nu_{p_i}(n)}$的因子只可能为小于等于$p_i^{\nu_{p_i}(n)}$的$p_i$的幂。因此我们有下式成立：
 
-$$\begin{aligned}(\lambda\*1)\left(p_i^{\nu_{p_i}(n)}\right)&=\sum_{a=0}^{\nu_{p_i}(n)}\lambda\left(p_i^a\right)\\\\&=\sum_{a=0}^{\nu_{p_i}(n)}(-1)^{\Omega\left(p_i^a\right)}\\\\&=\sum_{a=0}^{\nu_{p_i}(n)}(-1)^a\\\\&=\left\lceil\frac{\nu_{p_i}(n)+1}2\right\rceil-\left\lfloor\frac{\nu_{p_i}(n)+1}2\right\rfloor\\\\&=1\end{aligned}$$
+$$\begin{aligned}(\lambda*1)\left(p_i^{\nu_{p_i}(n)}\right)&=\sum_{a=0}^{\nu_{p_i}(n)}\lambda\left(p_i^a\right)\\&=\sum_{a=0}^{\nu_{p_i}(n)}(-1)^{\Omega\left(p_i^a\right)}\\&=\sum_{a=0}^{\nu_{p_i}(n)}(-1)^a\\&=\left\lceil\frac{\nu_{p_i}(n)+1}2\right\rceil-\left\lfloor\frac{\nu_{p_i}(n)+1}2\right\rfloor\\&=1\end{aligned}$$
 
 因此有：
 
-$$(\lambda\*1)(n)=\prod_{i=1}^{\omega(n)}(\lambda\*1)\left(p_i^{\nu_{p_i}(n)}\right)=\prod_{i=1}^{\omega(n)}1=1$$
+$$(\lambda*1)(n)=\prod_{i=1}^{\omega(n)}(\lambda*1)\left(p_i^{\nu_{p_i}(n)}\right)=\prod_{i=1}^{\omega(n)}1=1$$
 
 对于$n=1$的特殊情况，显然有：
 
-$$(\lambda\*1)(n)=\lambda(1)=(-1)^{\omega(1)}=(-1)^0=1$$
+$$(\lambda*1)(n)=\lambda(1)=(-1)^{\omega(1)}=(-1)^0=1$$
 
 证明完毕。
 
@@ -301,19 +301,19 @@ $$(\lambda\*1)(n)=\lambda(1)=(-1)^{\omega(1)}=(-1)^0=1$$
 
 上一节末尾，我们利用了狄利克雷卷积的性质证明了$\lambda*1=1_{Sq}$，而$1_{Sq}$距离我们的目标$\varepsilon$也非常接近。我们考虑在常数函数$1$的基础上构造积性函数$f$，对于质数$p$与正整数$q$，使得下式成立：
 
-$$(\lambda\*f)\left(p^q\right)=0$$
+$$(\lambda*f)\left(p^q\right)=0$$
 
-或许可以尝试列一些方程，并解一解这些方程得到小范围的$f$的值，找一找规律得到$f$的表达式。一个可行的想法是，当$n$不含质数平方因子时，令$f(n)=1$，否则令$f(n)=0$。此时$(\lambda\*f)\left(p^q\right)$中仅有$p^0$与$p^1$的两项值不为$0$，且将这两项值代入可得：
+或许可以尝试列一些方程，并解一解这些方程得到小范围的$f$的值，找一找规律得到$f$的表达式。一个可行的想法是，当$n$不含质数平方因子时，令$f(n)=1$，否则令$f(n)=0$。此时$(\lambda*f)\left(p^q\right)$中仅有$p^0$与$p^1$的两项值不为$0$，且将这两项值代入可得：
 
-$$(\lambda\*f)\left(p^q\right)=\sum_{i=0}^q\lambda(p^i)f(p^{q-i})=\lambda(p^q)+\lambda(p^{q-1})=-1+1=0$$
+$$(\lambda*f)\left(p^q\right)=\sum_{i=0}^q\lambda(p^i)f(p^{q-i})=\lambda(p^q)+\lambda(p^{q-1})=-1+1=0$$
 
 同时，由于构造出的$f$函数显然为积性函数，因此对于除$1$外的正整数$n$，我们有：
 
-$$(\lambda\*f)(n)=\prod_{i=1}^{\omega(n)}(\lambda\*f)\left(p_i^{\nu_{p_i}(n)}\right)=\prod_{i=1}^{\omega(n)}0=0$$
+$$(\lambda*f)(n)=\prod_{i=1}^{\omega(n)}(\lambda*f)\left(p_i^{\nu_{p_i}(n)}\right)=\prod_{i=1}^{\omega(n)}0=0$$
 
 注意到$1$的特殊性质了吗？上一节末尾特别注明了$1$的特殊性，在这里，我们也将利用这个性质：
 
-$$(\lambda\*f)(1)=\lambda(1)f(1)=(-1)^{\omega(1)}\times 1=(-1)^0\times 1=1$$
+$$(\lambda*f)(1)=\lambda(1)f(1)=(-1)^{\omega(1)}\times 1=(-1)^0\times 1=1$$
 
 因此$\lambda*f=\varepsilon$成立。
 
@@ -367,7 +367,7 @@ $$\sum_{i=1}^n[\gcd(i,n)=1]=\sum_{i=1}^n\sum_{d|\gcd(i,n)}\mu(d)$$
 
 注意到$d|\gcd(i,n)$相当于$d|i$且$d|n$。交换枚举顺序：
 
-$$\begin{aligned}&\sum_{i=1}^n\sum_{d|\gcd(i,n)}\mu(d)\\\\=&\sum_{d|n}\sum_{i=1}^{n/d}\mu(d)\\\\=&\sum_{d|n}\mu(d)\left(\frac nd\right)\end{aligned}$$
+$$\begin{aligned}&\sum_{i=1}^n\sum_{d|\gcd(i,n)}\mu(d)\\=&\sum_{d|n}\sum_{i=1}^{n/d}\mu(d)\\=&\sum_{d|n}\mu(d)\left(\frac nd\right)\end{aligned}$$
 
 上式是狄利克雷卷积形式，也就意味着，我们有下式成立：
 
@@ -447,7 +447,7 @@ $$\hat{Id}(s)=\sum_{n=1}^\infty \frac{Id(n)}{n^s}=\sum_{n=1}^\infty \frac{n}{n^s
 
 $$\hat\varphi(s)=\hat\mu(s)\cdot\hat{Id}(s)=\frac{\zeta(s-1)}{\zeta(s)}$$
 
-根据$d=1\*1$与$\sigma_k=1\*Id_k$可得：
+根据$d=1*1$与$\sigma_k=1*Id_k$可得：
 
 $$\hat d(s)=\hat 1(s)\cdot \hat 1(s)=\zeta^2(s)$$
 $$\hat \sigma_k(s)=\hat 1(s)\cdot \hat {Id_k}(s)=\zeta(s)\zeta(s-k)$$
@@ -512,7 +512,7 @@ $$\sum_{i=1}^n\frac{1}{i}\leq 1+\int_1^n\frac 1x\mathbb{d}x=1+\ln n-\ln 1=1+\ln 
 
 利用完全积性函数的性质，我们可以采用线性筛法计算前$n$个自然数的完全积性函数值。不妨先观察如下伪代码：
 
-$$\begin{aligned}&\mathbf{for}\mathtt{\ each\ natural\ number\ }n\mathtt{\ greater\ than\ }1\\\\&\mathtt{\quad}\mathbf{if}\mathtt{\ }n\mathtt{\ is\ a\ prime}\\\\&\mathtt{\quad\quad calculate\ }f(n)\\\\&\mathtt{\quad\quad insert\ }n\mathtt{\ into\ the\ prime\ set\ }\mathbb{P}\\\\&\mathtt{\quad}\mathbf{for}\mathtt{\ each\ prime\ }p\in\mathbb{P}\mathtt{\ in\ increasing\ order}\\\\&\mathtt{\quad\quad}p\*n\mathtt{\ is\ not\ a\ prime}\\\\&\mathtt{\quad\quad}f(p\*n) = f(n)\*f(p)\\\\&\mathtt{\quad\quad}\mathbf{if}\mathtt{\ }p|n\\\\&\mathtt{\quad\quad\quad}\mathbf{break}\end{aligned}$$
+$$\begin{aligned}&\mathbf{for}\mathtt{\ each\ natural\ number\ }n\mathtt{\ greater\ than\ }1\\&\mathtt{\quad}\mathbf{if}\mathtt{\ }n\mathtt{\ is\ a\ prime}\\&\mathtt{\quad\quad calculate\ }f(n)\\&\mathtt{\quad\quad insert\ }n\mathtt{\ into\ the\ prime\ set\ }\mathbb{P}\\&\mathtt{\quad}\mathbf{for}\mathtt{\ each\ prime\ }p\in\mathbb{P}\mathtt{\ in\ increasing\ order}\\&\mathtt{\quad\quad}p*n\mathtt{\ is\ not\ a\ prime}\\&\mathtt{\quad\quad}f(p*n) = f(n)*f(p)\\&\mathtt{\quad\quad}\mathbf{if}\mathtt{\ }p|n\\&\mathtt{\quad\quad\quad}\mathbf{break}\end{aligned}$$
 
 显然地，对于$n$以内除$1$外的每个自然数$u$，其函数值均由其最小的质因子$p$与$\frac up$的函数值相乘得到，因此这种线性筛法时间复杂度为$O(n)$。
 
