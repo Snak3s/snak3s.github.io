@@ -1,4 +1,10 @@
 pages:
+  - 🐍曲集锦:
+    - path: song-releases
+    - src: pages/song-releases.md
+    - author: Snakes
+    - date: 2026/08/08
+    - tags: [Aug 2026]
   - 异或最小值的性质:
     - path: minimum-under-linear-basis
     - src: pages/minimum-under-linear-basis.md

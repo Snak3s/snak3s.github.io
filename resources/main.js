@@ -361,7 +361,7 @@ function getIcon(iconName) {
 
 
 function getMotto() {
-	$("#index-motto-content").text("迷いを舍てて サテライト Ah…");
+	$("#index-motto-content").text("歩いた距離を測ってみたり");
 	$("#index-motto").css("opacity", 1);
 }
 
