@@ -108,8 +108,8 @@
 
 > **解**　$$
 > \sum_{k=0}^\infty A^k = (I - A)^{-1} = \begin{bmatrix}\frac 56 & \frac 43 \\ \frac 13 & \frac 56\end{bmatrix}^{-1} = \begin{bmatrix}\frac{10}3 & -\frac{16}3 \\ -\frac 43 & \frac {10}3\end{bmatrix}
->
 > $$
+>
 > $\square$
 
 &nbsp;
