@@ -94,7 +94,7 @@
 
 **题 4.9**　已知 $A = \begin{bmatrix}\frac 16 & -\frac 43 \\ -\frac 13 & \frac 16\end{bmatrix}$，则 $A$ 的谱半径 $\rho(A) = $ $\underline{\qquad}$．
 
-> **解**　$\varphi_A(\lambda) = (\lambda - {1\over 6})^2 - {4\over 9}$，$A$ 的特征值为 ${1\over 6} \pm {2\over 3}$，$\rho(A) = \boxed{{5\over 6}}$． $\square$
+> **解**　$\varphi_A(\lambda) = (\lambda - {1\over 6})^2 - {4\over 9}$，$A$ 的特征值为 ${1\over 6} \pm {2\over 3}$，$\rho(A) = \boxed{ {5\over 6}}$． $\square$
 
 &nbsp;
 

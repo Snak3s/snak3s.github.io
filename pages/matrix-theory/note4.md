@@ -81,7 +81,7 @@ $$
 
 不同 $p$–范数之间有以下关系．
 
-> **定理 4.6**　设 $1 < p < q \leq +\infty$，对于任意 $x\in\mathbb{C}^n$ 有 $\Vert x\Vert_q \leq \Vert x\Vert_p \leq n^{{1\over p} - {1\over q}}\Vert x\Vert_q$．
+> **定理 4.6**　设 $1 < p < q \leq +\infty$，对于任意 $x\in\mathbb{C}^n$ 有 $\Vert x\Vert_q \leq \Vert x\Vert_p \leq n^{ {1\over p} - {1\over q} }\Vert x\Vert_q$．
 
 ## 4.2　矩阵范数
 
@@ -193,9 +193,9 @@ $$\left\Vert Ax \right\Vert_v = \left\Vert Ax\alpha^\mathsf{H} \right\Vert_m \le
 
 $$
 \left\Vert A \right\Vert_1
-= \left\Vert \sum_{j=1}^n A_{{\ast}j}x_j \right\Vert_1
-\leq \sum_{j=1}^n |x_j|\left\Vert A_{{\ast}j} \right\Vert_1
-\leq \max_{1\leq j\leq n} \left\Vert A_{{\ast}j} \right\Vert_1
+= \left\Vert \sum_{j=1}^n A_{ {\ast}j}x_j \right\Vert_1
+\leq \sum_{j=1}^n |x_j|\left\Vert A_{ {\ast}j} \right\Vert_1
+\leq \max_{1\leq j\leq n} \left\Vert A_{ {\ast}j} \right\Vert_1
 = \max_{1\leq j\leq n} \sum_{i=1}^m |a_{ij}|
 $$
 

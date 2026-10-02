@@ -65,7 +65,7 @@
 > A^3 - 4A^2 + 5A - 2I = O \implies {1\over 2}A(A^2 - 4A + 5I) = I
 > $$
 >
-> 即可得到 $A^{-1} = \boxed{{1\over 2}(A^2 - 4A + 5I)}$． $\square$
+> 即可得到 $A^{-1} = \boxed{ {1\over 2}(A^2 - 4A + 5I)}$． $\square$
 
 &nbsp;
 
