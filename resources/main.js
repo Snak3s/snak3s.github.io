@@ -203,6 +203,9 @@ function loadConfig(config) {
 			if (!obj.hasOwnProperty("src")) {
 				obj.src = obj.path;
 			}
+			if (!obj.hasOwnProperty("index")) {
+				obj.index = false;
+			}
 		}
 		obj.tags = parseTags(obj.tags);
 		for (let id in obj.tags) {
@@ -212,7 +215,9 @@ function loadConfig(config) {
 			tags[obj.tags[id]].push(obj);
 		}
 		pages[obj.path] = obj;
-		pagelist.push(obj);
+		if (obj.index) {
+			pagelist.push(obj);
+		}
 	}
 }
 
