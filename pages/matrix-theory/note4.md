@@ -261,7 +261,6 @@ $$
 
 > **定理 4.15**　$$
 > \left\Vert A \right\Vert_2^2 = \lambda_{\max}(A^\mathsf{H} A) = \rho(A^\mathsf{H} A) \leq \left\Vert A^\mathsf{H} A \right\Vert
->
 > $$
 
 > **推论 4.4**　若 $A$ 是正规矩阵，则 $\rho(A^\mathsf{H} A) = \rho(A)^2$，从而 $\rho(A) = \left\Vert A \right\Vert_2$．
@@ -276,15 +275,14 @@ $$
 
 **证**　对于 $A$ 的任一特征值 $\lambda$，存在属于 $\lambda$ 的特征向量 $\boldsymbol{x}$，由 $\boldsymbol{x}\neq \boldsymbol{0}$ 可知 $\max_{1\leq j\leq n} |x_j| > 0$．现取 $i = \arg\max_j |x_j|$，则由 $A\boldsymbol{x} = \lambda \boldsymbol{x} \implies A_{i{\ast}} \boldsymbol{x} = \lambda x_i$ 可得
 $$
-
 \begin{aligned}
 {}& \sum_{j=1}^n a_{ij} x_j = \lambda x_i \\
 \implies{}& \sum_{\substack{1\leq j\leq n\\j\neq i}} a_{ij}x_j = (\lambda - a_{ii}) x_i \\
 \implies{}& |\lambda - a_{ii}|\cdot|x_i| \leq \sum_{\substack{1\leq j\leq n\\j\neq i}} |a_{ij}|\cdot|x_j| \leq |x_i|\sum_{\substack{1\leq j\leq n\\j\neq i}} |a_{ij}| \\
 \implies{}& |\lambda - a_{ii}| \leq \sum_{\substack{1\leq j\leq n\\j\neq i}} |a_{ij}|
 \end{aligned}
-
 $$
+
 $\square$
 
 > **推论 4.5**　$A^\mathsf{T}$ 与 $A$ 有相同特征值，设 $A^\mathsf{T}$ 的 Gershgorin 圆盘为 $G'_1, \dots, G'_n$，则 $\lambda \in \left(\cup_{i=1}^n G_i\right) \cap \left(\cup_{i=1}^n G'_i\right)$．
