@@ -268,9 +268,7 @@ $$
 
 > **定义 4.10（Gershgorin 圆盘）**　设 $A = (a_{ij})\in\mathbb{C}^{n\times n}$，令
 > $$
->
 > \delta_i = \sum_{\substack{1\leq j\leq n\\j\neq i}} |a_{ij}|
->
 > $$
 > 并定义 $G_i = \left\{ z\in\mathbb{C} \,\middle|\, |z-a_{ii}|\leq\delta_i \right\}$（$i=1,\dots,n$），即 $G_i$ 是复平面上以 $a_{ii}$ 为圆心，$\delta_i$ 为半径的闭圆盘，称之为 $A$ 的一个**Gershgorin 圆盘**．
 
@@ -311,15 +309,11 @@ $\square$
 
 > **定义 4.11（对角占优矩阵）**　设 $A = (a_{ij})\in\mathbb{C}^{n\times n}$．若对任意 $1\leq i\leq n$，有
 > $$
->
 > |a_{ii}| > \sum_{\substack{1\leq j\leq n\\j\neq i}} |a_{ij}|
->
 > $$
 > 则 $A$ 称为**行对角占优矩阵**．若对任意 $1\leq j\leq n$，有
 > $$
->
 > |a_{jj}| > \sum_{\substack{1\leq i\leq n\\i\neq j}} |a_{ij}|
->
 > $$
 > 则 $A$ 称为**列对角占优矩阵**．
 
@@ -331,15 +325,11 @@ $\square$
 
 > **定义 4.12（向量序列按范数收敛）**　设 $(V, \left\Vert \cdot \right\Vert_\alpha)$ 是 $n$ 维赋范线性空间，$\left\{ \boldsymbol{x}_k \right\}$ 是 $V$ 中的向量序列，若存在 $V$ 中的向量 $\boldsymbol{x}$ 满足
 > $$
->
 > \lim_{k\to\infty} \left\Vert \boldsymbol{x}_k - \boldsymbol{x} \right\Vert_\alpha = 0
->
 > $$
 > 则称向量序列 $\left\{ \boldsymbol{x}_k \right\}$ **按范数 $\left\Vert \cdot \right\Vert_\alpha$ 收敛于 $\boldsymbol{x}$**，记作
 > $$
->
 > \lim_{k\to\infty} \boldsymbol{x}_k = \boldsymbol{x} \quad\text{或}\quad \boldsymbol{x}_k \xrightarrow{\alpha}\boldsymbol{x}
->
 > $$
 > 称不收敛的向量序列是**发散**的．
 
@@ -347,15 +337,11 @@ $\square$
 
 > **定义 4.13（向量序列按坐标收敛）**　设 $(V, \left\Vert \cdot \right\Vert_\alpha)$ 是 $n$ 维赋范线性空间，$\boldsymbol{\varepsilon}_1 \dots, \boldsymbol{\varepsilon}_n$ 是 $V$ 中的一组基，$\left\{ \boldsymbol{x}_k \right\}$ 是 $V$ 中的向量序列，并记向量序列 $\left\{ \boldsymbol{x}_k \right\}$ 中的任一向量 $\boldsymbol{x}_k$ 在这组基下的坐标为
 > $$
->
 > \xi_k = [\xi_1^{(k)}, \dots, \xi_n^{(k)}]^\mathsf{T} \in \mathbb{F}^n
->
 > $$
 > 若存在 $V$ 中的向量 $\boldsymbol{x}$ 满足
 > $$
->
 > \lim_{k\to\infty} \xi_i^{(k)} = \xi_i \quad, \forall 1\leq i\leq n
->
 > $$
 > 则称向量序列 $\left\{ \boldsymbol{x}_k \right\}$ **按坐标收敛于 $\boldsymbol{x}$**，其中 $\xi$ 是 $\boldsymbol{x}$ 在这组基下的坐标．
 
@@ -363,9 +349,7 @@ $\square$
 
 > **定义 4.14（矩阵序列按坐标收敛）**　设矩阵序列 $\left\{ A_k \right\}$，其中 $A_k = (a_{ij}^{(k)}) \in \mathbb{C}^{m\times n}$，若
 > $$
->
 > \lim_{k\to\infty} a_{ij}^{(k)} = a_{ij}^{(0)} \quad, \forall 1\leq i\leq m, 1\leq j\leq n
->
 > $$
 > 则称矩阵序列 $\left\{ A_k \right\}$ **按元素收敛**或**按坐标收敛**，或简称为 $\left\{ A_k \right\}$ 收敛．$A_0 = (a_{ij}^{(0)})$ 称为 $\left\{ A_k \right\}$ 的**极限**，记为 $\lim_{k\to\infty} A_k = A_0$．
 
@@ -379,9 +363,7 @@ $\square$
 
 > **推论 4.11（矩阵序列按范数收敛）**　设 $\left\Vert \cdot \right\Vert$ 是 $\mathbb{C}^{m\times n}$ 上任一矩阵范数，$\mathbb{C}^{m\times n}$ 中矩阵序列 $\left\{ A_k \right\}$ 收敛于 $A$ 的充分必要条件是
 > $$
->
 > \lim_{k\to\infty} \left\Vert A_k - A \right\Vert = 0
->
 > $$
 
 > **推论 4.12**　若复方阵 $A$ 的某一范数满足 $\left\Vert A \right\Vert < 1$，则 $\lim_{k\to\infty} A^k = 0$．
@@ -440,9 +422,7 @@ $\sum_{k=0}^\infty c_kA^k$ 绝对收敛，当且仅当 $\sum_{k=0}^\infty |c_k|\
 
 > **定义 4.19（含参矩阵函数）**　设 $t$ 为标量参数，则
 > $$
->
 > f(At) = \sum_{k=0}^\infty c_k(At)^k \quad (|t|\rho(A) < r)
->
 > $$
 > 称为**含参矩阵函数**．
 
@@ -450,7 +430,6 @@ $\sum_{k=0}^\infty c_kA^k$ 绝对收敛，当且仅当 $\sum_{k=0}^\infty |c_k|\
 
 > **定理 4.28**　对于 Jordan 块 $J_n(\lambda)$，其 $k$ 次幂为
 > $$
->
 > J_n^k(\lambda) = \begin{bmatrix}
 > \lambda^k & \binom{k}{1}\lambda^{k-1} & \binom{k}{2}\lambda^{k-2} & \cdots & \binom{k}{n-1}\lambda^{k-n+1} \\
 > & \lambda^k & \binom{k}{1}\lambda^{k-1} & \ddots & \vdots \\
@@ -458,7 +437,6 @@ $\sum_{k=0}^\infty c_kA^k$ 绝对收敛，当且仅当 $\sum_{k=0}^\infty |c_k|\
 > & & & \lambda^k & \binom{k}{1}\lambda^{k-1} \\
 > & & & & \lambda^k
 > \end{bmatrix}
->
 > $$
 
 **证**　$$
