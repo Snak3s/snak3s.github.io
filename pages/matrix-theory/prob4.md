@@ -1,4 +1,4 @@
-# 矩阵分析 习题
+### 矩阵分析 习题
 
 **题 4.1**　设 $\Vert\cdot\Vert_\alpha$ 表示复线性空间 $\mathbb{C}^n$ 的 $\alpha$ 范数，$\alpha = 1, 2, \dots, \infty$，设 $x\in\mathbb{C}^n$，则必有：
 
@@ -195,11 +195,11 @@
 **题 4.25**　设 $A$ 为 $n$ 阶矩阵，则 $\det \mathrm{e}^A = \mathrm{e}^{\operatorname{tr} A}$．
 
 > **解**　$\boxed{\surd}$．存在可逆阵 $P$ 将 $A$ 相似到 Jordan 标准型 $J = P^{-1}AP$，于是
-> $$
 >
+> $$
 > \det \mathrm{e}^A = \det(P\mathrm{e}^JP^{-1}) = \det{\mathrm{e}^{PAP^{-1}}} = \det{\mathrm{e}^J} = \prod_i \mathrm{e}^{J_{ii}} = \exp\left(\sum_{i} J_{ii}\right) = \mathrm{e}^{\operatorname{tr} J}
->
 > $$
+>
 > $\square$
 
 &nbsp;
@@ -362,11 +362,11 @@ a_1 & a_2 & a_3 & \cdots & a_0
 4. $A(I-A)^{-1}$
 
 > **解**　$\boxed{\text{(1)(2)(3)}}$．这个幂级数即是
-> $$
 >
+> $$
 > \sum_{k=0}^\infty kx^k = x\sum_{k=1}^\infty kx^{k-1} = x\left(\sum_{k=0}^\infty x^k\right)' = x\left({1\over 1-x}\right)' = {x\over (1-x)^2}
->
 > $$
+>
 > $\square$
 
 &nbsp;
@@ -502,11 +502,11 @@ a_1 & a_2 & a_3 & \cdots & a_0
 **题 4.56**　设 $A$ 是复方阵，定义 $B = \begin{bmatrix}O & A \\ A^\mathsf{H} & O\end{bmatrix}$，则 $A$ 和 $B$ 的谱范数相等．
 
 > **解**　$\boxed{\surd}$．计算可知：
-> $$
 >
+> $$
 > B^\mathsf{H} B = B^2 = \begin{bmatrix}AA^\mathsf{H} & O \\ O & A^\mathsf{H} A\end{bmatrix}
->
 > $$
+>
 > 于是 $\lambda_{\max}(A^\mathsf{H} A) = \lambda_{\max}(AA^\mathsf{H}) = \lambda_{\max}(B^\mathsf{H} B)$． $\square$
 
 &nbsp;
@@ -575,7 +575,6 @@ a_1 & a_2 & a_3 & \cdots & a_0
 
 > **解**　$\boxed{\surd}$．
 > $$
->
 > \begin{aligned}
 > \left\Vert Ax \right\Vert_1 &= \sum_{1\leq i\leq n} |(Ax)_i| \\
 > &= \sum_{1\leq i\leq n} \left|\sum_{1\leq j\leq n} a_{ij} x_j\right| \\
@@ -583,8 +582,8 @@ a_1 & a_2 & a_3 & \cdots & a_0
 > &\leq \sum_{1\leq i\leq n} \max_{1\leq j\leq n} |a_{ij}| \left\Vert x \right\Vert_1 \\
 > &\leq n\max_{\substack{1\leq i\leq n\\1\leq j\leq n}}|a_{ij}| \cdot \left\Vert x \right\Vert_1
 > \end{aligned}
->
 > $$
+>
 > $\square$
 
 &nbsp;
@@ -593,10 +592,9 @@ a_1 & a_2 & a_3 & \cdots & a_0
 
 > **解**　$\boxed{\surd}$．
 > $$
->
 > {\mathrm{d}\over\mathrm{d} t}\left\Vert y \right\Vert_2^2 = {\mathrm{d}\over \mathrm{d} t}\left(\sum_{i} y_i^2(t)\right) = \sum_{i} 2y_i(t){\mathrm{d} y_i(t)\over \mathrm{d} t} = 2y^\mathsf{T}{\mathrm{d} y\over\mathrm{d} t}
->
 > $$
+>
 > $\square$
 
 &nbsp;
@@ -605,30 +603,25 @@ a_1 & a_2 & a_3 & \cdots & a_0
 
 > **解**　$\boxed{\surd}$．设 $X = (x_{ij}) \in \mathbb{C}^{n\times n}$，首先有
 > $$
->
 > {\mathrm{d} \over \mathrm{d} X}|X| = \begin{bmatrix}
 > {\partial|X|\over\partial x_{11}} & \cdots & {\partial|X|\over\partial x_{1n}} \\
 > \vdots & \ddots & \vdots \\
 > {\partial|X|\over\partial x_{n1}} & \cdots & {\partial|X|\over\partial x_{nn}}\end{bmatrix}
->
 > $$
 > 考虑 $|X|$ 的按行展开 $|X| = \sum_{j} x_{ij}A_{ij}$，其中 $A_{ij}$ 为代数余子式．两侧取偏导即有 ${\partial |X| \over \partial x_{ij}} = A_{ij}$．于是
 > $$
->
 > {\mathrm{d} \over \mathrm{d} X}|X| = \begin{bmatrix}A_{11} & \cdots & A_{1n} \\ \vdots & \ddots & \vdots \\ A_{n1} & \cdots & A_{nn}\end{bmatrix} = (X^{\ast})^\mathsf{T}
->
 > $$
 > 利用以上结论可得
 > $$
->
 > {\mathrm{d}\over\mathrm{d} X^\mathsf{T}}|X^{-1}|
 > = {\mathrm{d}\over\mathrm{d} X^\mathsf{T}}{1\over |X|}
 > = -{1\over |X|^2}{\mathrm{d}\over\mathrm{d} X^\mathsf{T}}|X|
 > = -{1\over |X|^2}X^{\ast}
 > = -{1\over |X|^2}|X|X^{-1}
 > = -{1\over |X|}X^{-1}
->
 > $$
+>
 > $\square$
 
 &nbsp;
@@ -685,25 +678,22 @@ a_1 & a_2 & a_3 & \cdots & a_0
 
 > **解**　$\boxed{\surd}$．正定性与齐次性显然，对于三角不等式：
 > $$
->
 > \begin{aligned}
 > \left\Vert A+B \right\Vert &= \left\Vert A+B \right\Vert_F + 2\left\Vert A+B \right\Vert_2 \\
 > &\leq \left\Vert A \right\Vert_F + \left\Vert B \right\Vert_F + 2(\left\Vert A \right\Vert_2 + \left\Vert B \right\Vert_2) \\
 > &= \left\Vert A \right\Vert + \left\Vert B \right\Vert
 > \end{aligned}
->
 > $$
 > 对于相容性：
 > $$
->
 > \begin{aligned}
 > \left\Vert AB \right\Vert &= \left\Vert AB \right\Vert_F + 2\left\Vert AB \right\Vert_2 \\
 > &\leq \left\Vert A \right\Vert_F\left\Vert B \right\Vert_F + 2\left\Vert A \right\Vert_2\left\Vert B \right\Vert_2 \\
 > &\leq (\left\Vert A \right\Vert_F + 2\left\Vert A \right\Vert_2)(\left\Vert B \right\Vert_F + 2\left\Vert B \right\Vert_2) \\
 > &= \left\Vert A \right\Vert\left\Vert B \right\Vert
 > \end{aligned}
->
 > $$
+>
 > $\square$
 
 &nbsp;
@@ -742,15 +732,14 @@ a_1 & a_2 & a_3 & \cdots & a_0
 
 > **解**　$\boxed{\surd}$．正定性与齐次性显然，对于三角不等式：
 > $$
->
 > \begin{aligned}
 > \left\Vert x+y \right\Vert &= \max\left\{ \left\Vert x+y \right\Vert_a, \left\Vert x+y \right\Vert_b \right\} \\
 > &\leq \max\left\{ \left\Vert x \right\Vert_a + \left\Vert y \right\Vert_a, \left\Vert x \right\Vert_b + \left\Vert y \right\Vert_b \right\} \\
 > &\leq \max\left\{ \left\Vert x \right\Vert_a, \left\Vert x \right\Vert_b \right\} + \max\left\{ \left\Vert y \right\Vert_a, \left\Vert y \right\Vert_b \right\} \\
 > &= \left\Vert x \right\Vert + \left\Vert y \right\Vert
 > \end{aligned}
->
 > $$
+>
 > $\square$
 
 &nbsp;
@@ -770,21 +759,15 @@ a_1 & a_2 & a_3 & \cdots & a_0
 
 > **解**　$\boxed{\text{(2)}}$．首先有
 > $$
->
 > {\partial \over \partial A_{ij}}\operatorname{tr}(AB) = {\partial \over \partial A_{ij}}\sum_{x} \sum_{y} A_{xy}B_{yx} = B_{ji}
->
 > $$
 > 因此
 > $$
->
 > {\partial \over \partial A}\operatorname{tr}(AB) = {\partial \over \partial A}\operatorname{tr}(BA) = B^\mathsf{T}
->
 > $$
 > 从而有
 > $$
->
 > \mathrm{d} \operatorname{tr}(A^\mathsf{T} A) = A\,\mathrm{d} A + A^\mathsf{T}\,\mathrm{d} A^\mathsf{T} = 2A\,\mathrm{d} A
->
 > $$
 > 即 ${\partial\over\partial A}\operatorname{tr}(A^\mathsf{T} A) = 2A$． $\square$
 
@@ -799,15 +782,14 @@ a_1 & a_2 & a_3 & \cdots & a_0
 
 > **解**　$\boxed{\text{(4)}}$．对于 (3)，有
 > $$
->
 > \begin{aligned}
 > \max_{\left\Vert x \right\Vert_2 = \left\Vert y \right\Vert_2 = 1} |y^\mathsf{H} A x|
 > &= \max_{\left\Vert x \right\Vert_2 = 1} \left|{x^\mathsf{H} A^\mathsf{H} \over \left\Vert Ax \right\Vert_2} A x\right| \\
 > &= \max_{\left\Vert x \right\Vert_2 = 1} {1\over \left\Vert Ax \right\Vert_2} \left\Vert Ax \right\Vert_2^2 \\
 > &= \left\Vert A \right\Vert_2
 > \end{aligned}
->
 > $$
+>
 > $\square$
 
 &nbsp;

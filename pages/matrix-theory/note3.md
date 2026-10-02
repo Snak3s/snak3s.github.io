@@ -1,6 +1,6 @@
-# 3　矩阵分解
+## 3　矩阵分解
 
-## 3.1　满秩分解
+### 3.1　满秩分解
 
 > **定理 3.1（满秩分解）**　设 $A\in\mathbb{C}^{m\times n}_r$（$r>0$），则存在列满秩矩阵 $B\in \mathbb{C}^{m\times r}_r$ 和行满秩矩阵 $C\in\mathbb{C}^{r\times n}_r$ 使得 $A=BC$．
 
@@ -30,7 +30,7 @@ $D$ 即是 $B_2$ 各列组成的基到 $B_1$ 各列组成的基的*过渡矩阵*
 
 - （$\Longleftarrow$） $\operatorname{rank}(A^\mathsf{H} A) = \operatorname{rank} A = n$，从而 $A^\mathsf{H} A$ 满秩可逆，$(A^\mathsf{H} A)^{-1}A^\mathsf{H} A = I$，即 $(A^\mathsf{H} A)^{-1}A^\mathsf{H}$ 是 $A$ 的一个左逆． $\square$
 
-## 3.2　QR 分解
+### 3.2　QR 分解
 
 > **定义 3.1**　若复方阵 $A$ 可分解为
 >
@@ -81,7 +81,7 @@ $$
 
 > **推论 3.2**　对于 $n\leq m$，$A \in \mathbb{C}^{m\times n}_n$ 可分解为 $A = UR$，其中 $U$ 为 $m$ 阶酉矩阵，$R = \begin{bmatrix}R_1\\O\end{bmatrix}$，$R_1$ 为正线上三角阵．
 
-## 3.3　Schur 分解
+### 3.3　Schur 分解
 
 > **定理 3.7（Schur 引理）**　任意复方阵 $A$ 相似于上三角阵 $\Lambda$，即存在可逆阵 $P$ 使得 $\Lambda = P^{-1}AP$ 为上三角阵，且上三角阵 $\Lambda$ 的对角元素是 $A$ 的特征值．
 
@@ -132,7 +132,7 @@ $$
 
 事实上，$A$ 的最小多项式 $m_A(\lambda)$ 中根 $\lambda_i$ 的次数，是 $A$ 的 Jordan 标准型中特征值为 $\lambda_i$ 的 Jordan 块的最大阶数．
 
-## 3.4　对角化分解
+### 3.4　对角化分解
 
 > **定义 3.6（单纯矩阵）**　若复方阵 $A$ 相似于对角阵 $\Lambda$，即存在可逆阵 $P$ 使得 $P^{-1}AP = \Lambda$，则称 $A$ 为**可对角化矩阵**或**单纯矩阵**．
 
@@ -180,7 +180,7 @@ $$
 > Q^\mathsf{T} AQ = \operatorname{diag}\left(1, 1, \dots, -1, -1, \dots, \begin{bmatrix}\cos\theta_1 & -\sin\theta_1 \\ \sin\theta_1 & \cos\theta_1\end{bmatrix}, \dots\right)
 > $$
 
-## 3.5　谱分解
+### 3.5　谱分解
 
 *谱*是泛函分析中的概念，在有限维线性空间中，可以认为谱就是*特征值*．谱分解即是将矩阵分解到其属于不同特征值的各个特征子空间上．
 
@@ -290,7 +290,7 @@ $$
 
 上式和 Lagrange *插值公式*本质相同．令 $f_i(\lambda) = \prod_{\substack{1\leq k\leq m \\ k\neq i}} (\lambda - \lambda_k)$，则 $E_i = f_i(A) / f_i(\lambda_i)$．
 
-## 3.6　Jordan 分解
+### 3.6　Jordan 分解
 
 或称*根子空间分解*．
 

@@ -1,6 +1,6 @@
-# 1　线性空间引论
+## 1　线性空间引论
 
-## 1.1　线性空间
+### 1.1　线性空间
 
 > **定义 1.1（线性空间）**　设 $(V, +)$ 是一个加群，$\mathbb{F}$ 是一个数域．定义 $\mathbb{F}$ 中的数与 $V$ 中元素的数乘运算，使得 $\forall \lambda \in \mathbb{F}, \boldsymbol{\alpha} \in V$，有唯一的 $\lambda\boldsymbol{\alpha} \in V$ 与之对应，且满足：
 >
@@ -24,7 +24,7 @@
 >
 > 则称 $\boldsymbol{\beta}$ 是 $\boldsymbol{\alpha}_1, \dots, \boldsymbol{\alpha}_n$ 的**线性组合**，或称 $\boldsymbol{\beta}$ 可由 $\boldsymbol{\alpha}_1, \dots, \boldsymbol{\alpha}_n$ **线性表示**．
 
-## 1.2　线性子空间
+### 1.2　线性子空间
 
 > **定义 1.3（子空间）**　设 $V$ 是 $\mathbb{F}$ 上的线性空间，$W$ 是 $V$ 的非空子集．若 $W$ 中的向量关于 $V$ 的加法和数乘运算也构成 $\mathbb{F}$ 上的线性空间，则称 $W$ 是 $V$ 的**子空间**．
 
@@ -76,7 +76,7 @@
 > N(A) = \left\{ \boldsymbol{x}\in \mathbb{C}^n \,\middle|\, A\boldsymbol{x} = \boldsymbol{0} \right\}
 > $$
 
-## 1.3　基与坐标
+### 1.3　基与坐标
 
 > **定义 1.8（线性相关，线性无关）**　设 $V$ 是 $\mathbb{F}$ 上的线性空间，$\boldsymbol{\alpha}_1, \dots, \boldsymbol{\alpha}_n$ 是 $V$ 中的一组向量．若方程
 >
@@ -146,7 +146,7 @@ $$
 \quad\implies\quad \boldsymbol{\alpha} = A\boldsymbol{\beta}
 $$
 
-## 1.4　内积空间
+### 1.4　内积空间
 
 > **定义 1.14（内积空间）**　设 $\mathbb{F} = \mathbb{R}$ 或 $\mathbb{C}$，$V$ 是 $\mathbb{F}$ 上的线性空间．若 $\forall \boldsymbol{\alpha}, \boldsymbol{\beta} \in V$ 定义了标量 $(\boldsymbol{\alpha}, \boldsymbol{\beta})\in \mathbb{F}$，满足
 >
@@ -265,7 +265,7 @@ $$
 
 > **定理 1.6**　设 $W$ 是内积空间 $V$ 的线性子空间，则 $W^\perp$ 也是 $V$ 的线性子空间，并且 $V = W + W^\perp$．
 
-## 1.5　直和与投影
+### 1.5　直和与投影
 
 > **定义 1.24（直和，正交直和）**　设 $W_1$ 与 $W_2$ 是线性空间 $V$ 的子空间，若和空间 $W_1 + W_2$ 中任意向量均唯一地表示成 $W_1$ 中的一个向量与 $W_2$ 中的一个向量之和，则称 $W_1 + W_2$ 是 $W_1$ 与 $W_2$ 的**直和**，记为 $W_1 \dotplus W_2$．
 >

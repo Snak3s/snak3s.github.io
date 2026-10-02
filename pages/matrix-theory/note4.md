@@ -1,6 +1,6 @@
-# 4　矩阵分析
+## 4　矩阵分析
 
-## 4.1　向量范数
+### 4.1　向量范数
 
 > **定义 4.1（向量范数）**　设 $V$ 是 $\mathbb{F}$ 上的线性空间，若对任意向量 $\boldsymbol{x}\in V$，$\Vert \boldsymbol{x}\Vert$ 是以 $\boldsymbol{x}$ 为自变量的实值函数，且满足：
 >
@@ -83,7 +83,7 @@ $$
 
 > **定理 4.6**　设 $1 < p < q \leq +\infty$，对于任意 $x\in\mathbb{C}^n$ 有 $\Vert x\Vert_q \leq \Vert x\Vert_p \leq n^{ {1\over p} - {1\over q} }\Vert x\Vert_q$．
 
-## 4.2　矩阵范数
+### 4.2　矩阵范数
 
 将矩阵展平为向量即可得到矩阵的向量范数．
 
@@ -144,7 +144,7 @@ $$
 
 > **定理 4.10**　设 $A$ 是 $n$ 阶复方阵，$\left\Vert \cdot \right\Vert$ 是给定矩阵范数，$P$ 是 $n$ 阶可逆矩阵，则 $\left\Vert A \right\Vert_m = \left\Vert P^{-1}AP \right\Vert$ 是矩阵范数．
 
-## 4.3　相容范数
+### 4.3　相容范数
 
 > **定义 4.7（相容）**　若对 $A\in\mathbb{C}^{m\times n}$ 与 $\boldsymbol{x}\in\mathbb{C}^n$，向量范数 $\left\Vert \boldsymbol{x} \right\Vert_v$ 与矩阵范数 $\left\Vert A \right\Vert_m$ 满足 $\left\Vert A\boldsymbol{x} \right\Vert_v\leq\left\Vert A \right\Vert_m\left\Vert \boldsymbol{x} \right\Vert_v$，则称向量范数 $\left\Vert \boldsymbol{x} \right\Vert_v$ 与矩阵范数 $\left\Vert A \right\Vert_m$ **相容**．
 
@@ -243,7 +243,7 @@ $$
 
 $\square$
 
-## 4.4　特征值估计
+### 4.4　特征值估计
 
 > **定义 4.9（谱，谱半径）**　设 $A\in\mathbb{C}^{n\times n}$，记 $S_p(A)$ 为 $A$ 的全体特征值构成的集合，则称 $S_p(A)$ 为 $A$ 的**谱**，称 $\rho(A) = \max_{\lambda\in S_p(A)} |\lambda|$ 为 $A$ 的**谱半径**．
 
@@ -327,7 +327,7 @@ $\square$
 
 可以通过考察与 $A$ 相似的矩阵估计 $A$ 的特征值．取合适的非零实数 $d_1, \dots, d_n$，并令 $D = \operatorname{diag}(d_1, \dots, d_n)$，则 $A$ 与 $B = DAD^{-1} = (a_{ij}{d_i\over d_j})$ 相似，$B$ 与 $A$ 有相同特征值．若 $d_i < 1$ 且其余元素为 $1$，则对应 $d_i$ 的圆盘 $G_i$ 会缩小，其余圆盘会放大．若 $d_i > 1$ 且其余元素为 $1$，则对应 $d_i$ 的圆盘 $G_i$ 会放大，其余圆盘会缩小．
 
-## 4.5　矩阵级数
+### 4.5　矩阵级数
 
 > **定义 4.12（向量序列按范数收敛）**　设 $(V, \left\Vert \cdot \right\Vert_\alpha)$ 是 $n$ 维赋范线性空间，$\left\{ \boldsymbol{x}_k \right\}$ 是 $V$ 中的向量序列，若存在 $V$ 中的向量 $\boldsymbol{x}$ 满足
 > $$
@@ -426,7 +426,7 @@ $\sum_{k=0}^\infty c_kA^k$ 绝对收敛，当且仅当 $\sum_{k=0}^\infty |c_k|\
 
 > **推论 4.15（Neumann 级数）**　矩阵幂级数 $\sum_{k=0}^\infty A^k$ 收敛当且仅当 $\rho(A) < 1$，此时 $\sum_{k=0}^\infty A^k = (I-A)^{-1}$．
 
-## 4.6　矩阵函数
+### 4.6　矩阵函数
 
 > **定义 4.18（矩阵函数）**　设幂级数 $\sum_{k=0}^\infty c_kz^k$ 的收敛半径为 $r$，当 $|z| < r$ 时，幂级数收敛于函数 $f(z)$，若复方阵 $A$ 满足 $\rho(A) < r$，则称收敛的矩阵幂级数 $\sum_{k=0}^\infty c_kA^k$ 为**矩阵函数**，记为 $f(A)$．
 

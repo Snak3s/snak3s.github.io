@@ -29,56 +29,56 @@ pages:
     - author: Serval
     - date: 2025/01/04
     - tags: [Jan 2025, Linear Algebra]
-    - index: false
+    - hidden: true
   - BUAA　矩阵理论与应用 I　线性映射与矩阵:
     - path: matrix-theory-note2
     - src: pages/matrix-theory/note2.md
     - author: Serval
     - date: 2025/01/04
     - tags: [Jan 2025, Linear Algebra]
-    - index: false
+    - hidden: true
   - BUAA　矩阵理论与应用 I　矩阵分解:
     - path: matrix-theory-note3
     - src: pages/matrix-theory/note3.md
     - author: Serval
     - date: 2025/01/04
     - tags: [Jan 2025, Linear Algebra]
-    - index: false
+    - hidden: true
   - BUAA　矩阵理论与应用 I　矩阵分析:
     - path: matrix-theory-note4
     - src: pages/matrix-theory/note4.md
     - author: Serval
     - date: 2025/01/04
     - tags: [Jan 2025, Linear Algebra]
-    - index: false
+    - hidden: true
   - BUAA　矩阵理论与应用 I　线性空间引论 习题:
     - path: matrix-theory-prob1
     - src: pages/matrix-theory/prob1.md
     - author: Serval
     - date: 2025/01/04
     - tags: [Jan 2025, Linear Algebra]
-    - index: false
+    - hidden: true
   - BUAA　矩阵理论与应用 I　线性映射与矩阵 习题:
     - path: matrix-theory-prob2
     - src: pages/matrix-theory/prob2.md
     - author: Serval
     - date: 2025/01/04
     - tags: [Jan 2025, Linear Algebra]
-    - index: false
+    - hidden: true
   - BUAA　矩阵理论与应用 I　矩阵分解 习题:
     - path: matrix-theory-prob3
     - src: pages/matrix-theory/prob3.md
     - author: Serval
     - date: 2025/01/04
     - tags: [Jan 2025, Linear Algebra]
-    - index: false
+    - hidden: true
   - BUAA　矩阵理论与应用 I　矩阵分析 习题:
     - path: matrix-theory-prob4
     - src: pages/matrix-theory/prob4.md
     - author: Serval
     - date: 2025/01/04
     - tags: [Jan 2025, Linear Algebra]
-    - index: false
+    - hidden: true
   - SHA256 以 114514 开头的字符串:
     - path: sha256-114514
     - src: pages/sha256-114514.md

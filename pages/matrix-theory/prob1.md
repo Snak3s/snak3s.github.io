@@ -1,4 +1,4 @@
-# 线性空间引论 习题
+### 线性空间引论 习题
 
 **题 1.1**　设 Hermite 矩阵 $A = \begin{bmatrix} 1 & 1+\mathrm{i} & \mathrm{i} \\ 1-\mathrm{i} & 5 & 0 \\ -\mathrm{i} & 0 & 2 \end{bmatrix}$，则矩阵 $A$ 为 $\underline{\qquad}$ （正定 / 半正定 / 不定 / 半负定）Hermite 矩阵．
 
